@@ -153,12 +153,24 @@ Gợi ý:
 - Job-to-be-done (công việc người dùng "thuê" sản phẩm làm hộ) là gì?
 
 **Trả lời của tôi:**  
-> giả định rằng người dùng không hề có 1 kho ảnh đủ to và đủ "tiện" để có thể lấy và sử dụng minh họa trong những báo cáo học tập / thuyết trình. Giá trị cốt lõi Getty tạo ra từng là cung cấp 1 dịch vụ như vậy với subscription model với giá cạnh tranh
-> Getty đã từng thắng bởi data lớn, và giả định rằng việc người dùng tự tạo ra những hình ảnh như vậy là không hề khả thi
+> giả định rằng người dùng không hề có 1 kho ảnh HỢP PHÁP đủ to và đủ chuyên nghiệp để có thể lấy và sử dụng minh họa. Giá trị cốt lõi Getty tạo ra từng là cung cấp 1 dịch vụ như vậy ở quy mô lớn cho các tập đoàn tránh các vấn đề pháp lý
 >
-> **AI improve:** Giả định cốt lõi Getty từng thắng nhờ: **(1)** người dùng *không thể tự sản xuất* một tấm ảnh chuyên nghiệp, hợp pháp một cách nhanh & rẻ → buộc phải đi mua; **(2)** một kho ảnh **đã dọn sạch bản quyền + có bảo chứng pháp lý (indemnification) + nội dung độc quyền/biên tập** ở quy mô lớn là thứ rất khó sao chép. *Chỉnh lại:* moat của Getty **không phải "giá rẻ/cạnh tranh"** — phân khúc giá rẻ là iStock/Shutterstock; Getty thắng ở **chất lượng + an toàn pháp lý** cho khách **doanh nghiệp / báo chí / quảng cáo**. (Use case "báo cáo học tập / thuyết trình" thuộc nhóm giá rẻ — chính là **sườn dễ bị AI đánh sập trước**.) "Data lớn" đúng nhưng chưa đủ: AI giờ cũng có ảnh vô hạn — thứ Getty có mà AI thiếu là **bản quyền sạch + bảo chứng pháp lý**.
+> Getty đã từng thắng bởi data lớn và vấn đề bản quyền được hoàn toàn xử lý trước khi đến tay người dùng
+>
+> JTBD của Getty là  When tôi cần minh hoạ cho nội dung sắp xuất bản và đang chạy deadline, I want một tấm ảnh đẹp + an toàn pháp lý ngay lập tức, so I can đăng/in mà không lo bị kiện và không phải thuê chụp.
 
-**Bằng chứng đỡ nhận định này:** E1 (mô hình doanh thu cấp phép ~$900M), E4 (quy mô / oligopoly) — *E2 là "tác động", để dành cho Nhận định 3*
+**AI improve:** 
+> Giả định cốt lõi Getty từng thắng nhờ: 
+>
+> **(1)** người dùng *không thể tự sản xuất* một tấm ảnh chuyên nghiệp, hợp pháp một cách nhanh & rẻ → buộc phải đi mua; 
+>
+> **(2)** một kho ảnh **đã dọn sạch bản quyền + có bảo chứng pháp lý (indemnification) + nội dung độc quyền/biên tập** ở quy mô lớn là thứ rất khó sao chép.
+>
+> **JTBD này gồm 2 phần, và AI chỉ đánh được 1:** ✅ *"ảnh đẹp, nhanh, rẻ"* → AI làm tốt;
+>
+> ⚠️ *"an toàn pháp lý / được bảo chứng, không bị kiện"* → AI **chưa** làm sạch được (xem E3). → **Bản thân JTBD không chết — chỉ là cách "thuê" để hoàn thành nửa rẻ của job đã chuyển sang AI**; nửa "an toàn pháp lý" vẫn là moat còn sống của Getty (chính là đường thoát cho Nhận định 4).
+
+**Bằng chứng đỡ nhận định này:** E1 (mô hình doanh thu cấp phép ~$900M), E4 (quy mô / oligopoly)
  
 ---
 
@@ -182,14 +194,20 @@ Gợi ý:
 - build-copy cycles tăng tốc
 - GTM + distribution quan trọng hơn
 
-**Shift kỳ vọng quan trọng nhất:** ___________________________________  
-**Competitive dynamic quan trọng nhất:** ___________________________________
+**Shift kỳ vọng quan trọng nhất:** May đo cho tôi (#2) — bespoke thay vì chọn ảnh có sẵn (kèm #1 Làm xong giúp tôi)  
+**Competitive dynamic quan trọng nhất:** switching costs giảm
 
 **Trả lời của tôi:**  
-> _______________________________________________  
-> _______________________________________________
+> Phản hồi ngay 
+> Thấu hiểu ngữ cảnh
+>
+> **AI improve:** 2 lựa chọn "Phản hồi ngay" và "Thấu hiểu ngữ cảnh" **chưa phải dịch chuyển sắc nhất** cho Getty — tìm ảnh trên Getty vốn đã nhanh, nên tốc độ không phải điểm yếu cốt lõi. Dịch chuyển kỳ vọng **mạnh nhất** là:
+> - **#2 May đo cho tôi:** trước đây user *tìm trong kho và chấp nhận tấm gần đúng nhất*; giờ AI **tạo đúng tấm mình mô tả** → cú đánh sâu nhất vào mô hình **kho ảnh có sẵn**.
+> - **#1 Làm xong giúp tôi:** thay vì "đưa nguyên liệu để tự ghép", AI **giao luôn thành phẩm**.
+>
+> **Competitive dynamic — switching costs giảm:** Getty vốn không có lock-in mạnh; nay giải pháp thay thế (AI) gần như *miễn phí & tức thì*, nên **không còn gì giữ user ở nửa phổ thông**. ("data advantages tăng" là lợi cho phe AI, không phải Getty.)
 
-**Bằng chứng đỡ nhận định này:** E___, E___
+**Bằng chứng đỡ nhận định này:** E1 (doanh thu đi ngang dù đã có sản phẩm AI riêng = cầu dịch sang cách làm mới), E4 (thương phẩm hoá / phải sáp nhập)
 
 ---
 
