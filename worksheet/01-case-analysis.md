@@ -153,11 +153,13 @@ Gợi ý:
 - Job-to-be-done (công việc người dùng "thuê" sản phẩm làm hộ) là gì?
 
 **Trả lời của tôi:**  
-> _______________________________________________  
-> _______________________________________________
+> giả định rằng người dùng không hề có 1 kho ảnh đủ to và đủ "tiện" để có thể lấy và sử dụng minh họa trong những báo cáo học tập / thuyết trình. Giá trị cốt lõi Getty tạo ra từng là cung cấp 1 dịch vụ như vậy với subscription model với giá cạnh tranh
+> Getty đã từng thắng bởi data lớn, và giả định rằng việc người dùng tự tạo ra những hình ảnh như vậy là không hề khả thi
+>
+> **AI improve:** Giả định cốt lõi Getty từng thắng nhờ: **(1)** người dùng *không thể tự sản xuất* một tấm ảnh chuyên nghiệp, hợp pháp một cách nhanh & rẻ → buộc phải đi mua; **(2)** một kho ảnh **đã dọn sạch bản quyền + có bảo chứng pháp lý (indemnification) + nội dung độc quyền/biên tập** ở quy mô lớn là thứ rất khó sao chép. *Chỉnh lại:* moat của Getty **không phải "giá rẻ/cạnh tranh"** — phân khúc giá rẻ là iStock/Shutterstock; Getty thắng ở **chất lượng + an toàn pháp lý** cho khách **doanh nghiệp / báo chí / quảng cáo**. (Use case "báo cáo học tập / thuyết trình" thuộc nhóm giá rẻ — chính là **sườn dễ bị AI đánh sập trước**.) "Data lớn" đúng nhưng chưa đủ: AI giờ cũng có ảnh vô hạn — thứ Getty có mà AI thiếu là **bản quyền sạch + bảo chứng pháp lý**.
 
-**Bằng chứng đỡ nhận định này:** E___, E___
-
+**Bằng chứng đỡ nhận định này:** E1 (mô hình doanh thu cấp phép ~$900M), E4 (quy mô / oligopoly) — *E2 là "tác động", để dành cho Nhận định 3*
+ 
 ---
 
 ### Nhận định 2 — Kỳ vọng người dùng và luật chơi cạnh tranh đã đổi ở đâu?
