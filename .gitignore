@@ -3,3 +3,6 @@
 node_modules/
 .vscode/
 .idea/
+
+# Local lab coaching file — not part of the submission
+CLAUDE.md
