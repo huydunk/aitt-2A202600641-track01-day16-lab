@@ -222,10 +222,16 @@ Gợi ý:
 - Phân khúc này còn tồn tại không? Nếu còn, nó đang được phục vụ theo cách khác ra sao?
 
 **Điều đã thay đổi vĩnh viễn theo tôi là:**  
-> _______________________________________________  
-> _______________________________________________
+> Entry point và workflow cũ giờ đã không còn tồn tại vì hiện gen ra 1 hình ảnh với AI qua chatbot đã trở thành chuẩn mới của industry, khi mà mọi tác vụ đều được thực hiện qua chat. 
+> thay đổi vĩnh viễn: user không còn nghĩ đến getty khi muốn tìm ảnh minh họa
+> phân khúc vẫn còn tồn tại, khi mà Getty tích hợp AI để gen ảnh
+>
+> **AI improve:** Cốt lõi bạn nắm đúng — **thay đổi vĩnh viễn = mặc định trong đầu user đã đổi**: khi cần một hình ảnh, ý nghĩ đầu tiên không còn là *"tìm trên Getty"* mà là *"gen bằng AI"*. Đây là **chuẩn mới**, không phải triệu chứng. Sắc thêm 3 chỗ:
+> - **Đừng tuyệt đối hoá:** không phải "mọi tác vụ" hay toàn bộ entry point cũ biến mất — chỉ **entry point của nửa phổ thông (commodity)** bị lật; nhu cầu **cao cấp / an toàn pháp lý / ảnh báo chí độc quyền** vẫn nghĩ đến Getty.
+> - **Phân khúc không chỉ "vẫn tồn tại" — nó tách đôi (bifurcate):** phần phổ thông chảy về AI, phần cao cấp/hợp pháp ở lại mô hình cấp phép. Getty tích hợp AI chỉ là *phản ứng*, không phải lý do phân khúc sống.
+> - **Luật chơi mới:** kho ảnh có sẵn không còn là moat; moat dịch sang **bản quyền sạch + bảo chứng pháp lý + nội dung độc quyền** — thứ AI chưa chạm tới (E3).
 
-**Bằng chứng đỡ nhận định này:** E___, E___
+**Bằng chứng đỡ nhận định này:** E1 (cầu dịch sang cách làm mới, doanh thu đi ngang), E4 (thương phẩm hoá / phải sáp nhập) — *E2 chỉ là triệu chứng*
 
 ---
 
