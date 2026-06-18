@@ -243,13 +243,17 @@ Gợi ý:
 - Nếu không cứu được: vì sao đã quá muộn?
 - So với một đối thủ phản ứng tốt hơn, họ chậm ở đâu?
 
-**Verdict ban đầu của tôi:** Có / Không / Có nhưng phải đổi rất mạnh
+**Verdict ban đầu của tôi:** Có nhưng phải đổi rất mạnh
 
 **Trả lời của tôi:**  
-> _______________________________________________  
-> _______________________________________________
+> theo em, case này còn cứu được, nhất là khi getty chủ động thay đổi theo hướng tích hợp AI vào sản phẩm mình, merge với firm lớn nhất còn lại, và kiên quyết giữ USP của họ là bảo chứng pháp lý
+>
+> **AI improve:** Hướng đi đúng, nhưng "còn cứu được" nên nói rõ: **cứu được thành một doanh nghiệp cấp phép cao cấp / hợp pháp NHỎ HƠN — không quay lại thời tăng trưởng** (giá cổ phiếu $0,72 + sáp nhập phòng thủ cho thấy đây là *sinh tồn*, không phải *hồi sinh*). Sắc thêm:
+> - **Tích hợp AI phải đúng kiểu:** AI **train trên dữ liệu có bản quyền + có bảo chứng (indemnified)** như "Generative AI by Getty" — KHÔNG nhảy vào đua làm thêm một generator phổ thông (cuộc đua Getty đang thua). Moat là *an toàn pháp lý*, không phải *thêm ảnh*.
+> - **Sáp nhập với Shutterstock = phòng thủ** (cắt chi phí, gom quy mô), **không sửa được moat** — mua thời gian, không mua lại vị thế.
+> - **Họ chậm ở đâu:** so với **Adobe (Firefly)** — Adobe nhúng AI vào *đúng nơi designer đang làm việc* (Creative Cloud) + cũng bảo chứng thương mại; Getty thiếu **distribution / workflow embedding** đó nên phản ứng chậm & yếu hơn.
 
-**Bằng chứng đỡ nhận định này:** E___, E___
+**Bằng chứng đỡ nhận định này:** E4 (sáp nhập = phòng thủ), E1 (đi ngang dù đã có AI riêng), E3 (an toàn pháp lý = moat còn lại)
 
 ---
 
