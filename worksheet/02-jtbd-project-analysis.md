@@ -344,16 +344,16 @@ Sau khi map workflow, mới hỏi:
 
 | Step | AI nên giúp bằng cách nào? | Vì sao AI hợp ở đây? | Rủi ro chính nếu dùng AI |
 |---|---|---|---|
-| 1 | | | |
-| 2 | | | |
+| Prepare + Confirm | gom & làm sạch dữ liệu PMS rải rác thành **bản tóm tắt ca tập trung hành động** (ngoại lệ, bất thường, tiền cần thu, việc carry-over), sắp theo mức ưu tiên | tổng hợp ngôn ngữ tự nhiên, xử lý text lộn xộn / boilerplate OTA và **ưu tiên việc** là loại bài máy làm tốt & nhất quán hơn người — khó hard-code | hallucinate / sai số / **bỏ sót một mục quan trọng** (khách VIP, transfer) → mất niềm tin. *Giảm thiểu: số liệu (số dư...) tính trong code, AI chỉ diễn đạt & ưu tiên.* |
+| Locate (fetch) | *(không phải chỗ của AI)* — kéo dữ liệu PMS qua API là việc code deterministic | dữ liệu có cấu trúc, gọi API là đủ; thêm LLM ở đây chỉ tăng rủi ro sai không cần thiết | nếu cố dùng AI để "đọc" dữ liệu → thêm lỗi vô cớ |
 
 ### Kết luận nhanh
 
 **AI leverage point quan trọng nhất của dự án tôi là:**  
-> _______________________________________________
+> biến mớ dữ liệu PMS rải rác thành một **bản tóm tắt ca tập trung hành động, có ưu tiên** ở bước Prepare/Confirm — nơi con người vừa chậm (15–20') vừa dễ sót.
 
 **Vì sao không phải ở bước khác:**  
-> _______________________________________________
+> Locate (lấy dữ liệu) là việc của **API/tích hợp**, không cần AI; Execute/Monitor là **hành vi con người**. Giá trị AI nằm đúng ở khâu **tổng hợp + ưu tiên** — chỗ đắt công và dễ sai nhất khi làm tay.
 
 ---
 
@@ -372,13 +372,12 @@ vì [giá trị rõ nhất].
 
 ### Bản hypothesis của tôi
 
-> _______________________________________________  
-> _______________________________________________
+> Nếu chúng ta giúp **lễ tân/giám sát ca** bàn giao & tiếp nhận ca tốt hơn ở bước **Prepare/Confirm**, bằng cách dùng **AI gom + làm sạch dữ liệu PMS thành bản tóm tắt ca tập trung hành động** (số liệu tính sẵn trong code), thì họ sẽ chuyển từ **tra PMS thủ công + note tay** sang **Opstream**, vì nắm đủ việc cần làm trong **<30s thay vì 15–20 phút** mà **ít sót hơn**.
 
 ### Tín hiệu sớm nếu hypothesis này đúng
 
-1. _______________________________________________
-2. _______________________________________________
+1. Thời gian bàn giao ca giảm rõ rệt (từ 15–20' xuống còn vài phút), đo được trên ca thật.
+2. Lễ tân **chủ động mở Opstream đầu mỗi ca** thay vì tra PMS, và số vụ sót (ETA / transfer / thu thiếu) giảm.
 
 ---
 
@@ -398,15 +397,15 @@ Job story chưa có research vẫn chỉ là **giả thuyết tốt hơn**, chư
 
 | Assumption | Vì sao assumption này rủi ro? | Tôi đang có bằng chứng gì? | Cần validate bằng cách nào tiếp theo? |
 |---|---|---|---|
-| A1 | | | |
-| A2 | | | |
-| A3 | | | |
-| A4 | | | |
-| A5 | | | |
+| A1 — chọn đúng job executor (cả giao lẫn nhận) | có thể chỉ một phía thực sự đau, "cả hai" làm loãng trọng tâm | mới chỉ quan sát workflow, chưa đo | shadow/phỏng vấn cả người giao và người nhận ca |
+| A2 — pain đủ đau & đủ thường xuyên | ca vắng việc thì note tay là đủ, không cần tool | con số 15–20'/ca từ mô tả nội bộ | bấm giờ thực tế trên nhiều ca / nhiều property |
+| A3 — user sẽ bỏ note tay nếu có cái tốt hơn | thói quen + ngại đổi, switching cost thấp cả hai chiều | chưa có | thử 1–2 property, xem có dùng đều sau 2 tuần không |
+| A4 — AI thật sự tạo giá trị ở Prepare/Confirm | nếu tóm tắt sót/sai thì tệ hơn làm tay | demo nội bộ chạy được | so tóm tắt AI vs bản người làm trên ca thật, đo độ sót |
+| A5 — user đủ tin AI để đưa vào việc thật | chỉ 1 lần sai số / sót khách là mất niềm tin | đã thiết kế "số liệu tính trong code" để giảm rủi ro | đo tỉ lệ lễ tân hành động theo tóm tắt mà **không** kiểm lại PMS |
 
 ### Assumption nguy hiểm nhất nếu tôi đang sai
 
-> _______________________________________________
+> **A5 (niềm tin) — gắn chặt A4.** Nếu AI bỏ sót/đọc sai một mục quan trọng (khách VIP, transfer, thu thiếu) dù chỉ một lần, lễ tân sẽ quay lại tra PMS thủ công "cho chắc" → mất luôn lợi thế <30s và cả hypothesis sập. Vì vậy độ tin cậy + chống-sót quan trọng hơn cả tốc độ.
 
 ---
 
