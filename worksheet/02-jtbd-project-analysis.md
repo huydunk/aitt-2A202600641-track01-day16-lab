@@ -174,9 +174,9 @@ Phần lớn dự án nhóm viết quá rộng ở bước này, rồi sau đó 
 
 ### Điền
 
-- **Job executor của dự án này là:** ___________________________________
+- **Job executor của dự án này là:** lễ tân / giám sát ca tại boutique hotel — ở đúng vai trò **bàn giao ca**, gồm cả người giao ca lẫn người nhận ca (hai phía của cùng một khoảnh khắc).
 - **Vì sao tôi tin đây là người trực tiếp "thuê" giải pháp để làm job:**  
-  > ___________________________________
+  > chính lễ tân/giám sát ca là người **trực tiếp tạo ra và đọc** bản giao ca để vận hành — không phải chủ khách sạn (người trả tiền) hay quản lý cấp cao (người ảnh hưởng). Họ là người chịu hậu quả trực tiếp nếu sót việc, nên là người "thuê" một cách bàn giao tốt hơn. *(Lưu ý: chọn "cả hai phía" → cần validate sau xem bên giao hay bên nhận mới là bên đau nhất.)*
 
 ---
 
@@ -207,16 +207,16 @@ Phần lớn dự án nhóm viết quá rộng ở bước này, rồi sau đó 
 ### Bản nháp 1
 
 **Core JTBD bản nháp:**  
-> _______________________________________________
+> Vào ca / giao ca mà vẫn nắm chắc toàn bộ việc còn dang dở và tình huống cần xử lý của ca trước, đủ nhanh để không bỏ sót khách nào.
 
 ### Gạch bỏ từ solution nếu có
 
-- Các từ solution tôi đang lỡ nhét vào câu: _________________________________
+- Các từ solution tôi đang lỡ nhét vào câu: *(không có — câu đã không nhắc tới AI / tóm tắt / app / màn hình / một nút bấm)*
 
 ### Bản chốt
 
 **Core JTBD cuối cùng:**  
-> _______________________________________________
+> Bàn giao và tiếp nhận trạng thái ca trực một cách **đầy đủ và đáng tin** trong **thời gian ngắn**, để **không việc nào hay khách nào bị rơi giữa hai ca**.
 
 ---
 
