@@ -216,7 +216,7 @@ Phần lớn dự án nhóm viết quá rộng ở bước này, rồi sau đó 
 ### Bản chốt
 
 **Core JTBD cuối cùng:**  
-> Bàn giao và tiếp nhận trạng thái ca trực một cách **đầy đủ và đáng tin** trong **thời gian ngắn**, để **không việc nào hay khách nào bị rơi giữa hai ca**.
+> **Luôn nắm được việc gì cần xử lý tiếp và đảm bảo nó được xử lý đúng**, trong **suốt ca trực** (từ lúc nhận ca đến lúc giao ca), để **không việc nào hay khách nào bị rơi**.
 
 ---
 
@@ -241,7 +241,7 @@ When [trigger], I want to [motivation], so I can [outcome].
 |---|---|---|---|---|
 | JS1 | Tôi vừa vào ca tối, ca trước để lại một mớ note tay rời rạc | nắm ngay việc nào còn dang dở + ngoại lệ cần xử lý | bắt đầu phục vụ khách mà không bỏ sót ai | job đau nhất nằm ở lúc **tiếp nhận ca** |
 | JS2 | Khách sắp check-out nhưng còn số dư công nợ / transfer chưa đặt | thấy ngay đúng ca này cần thu / xử lý gì kèm mã đặt phòng | không để thất thoát tiền hoặc lỡ dịch vụ của khách | job có **hệ quả tiền bạc**, không chỉ là thông tin |
-| JS3 | Tôi đang trông cùng lúc nhiều property, đầu ca dồn việc | có cái nhìn gọn về tình hình từng property | phân bổ sự chú ý đúng chỗ thay vì tra từng PMS | pain **nhân lên theo số property** |
+| JS3 | Giữa ca cao điểm, nhiều việc ập đến cùng lúc và tôi không chắc nên xử lý gì trước | được gợi ý nên làm việc nào tiếp theo và tạo/giao việc ngay từ đó | xử lý đúng việc quan trọng nhất trước, không bị khựng giữa ca | job không chỉ là **biết**, mà là **quyết định & hành động** ngay trong ca (đúng vai lễ tân, không phải GM) |
 
 ### Tự kiểm nhanh
 
@@ -344,16 +344,16 @@ Sau khi map workflow, mới hỏi:
 
 | Step | AI nên giúp bằng cách nào? | Vì sao AI hợp ở đây? | Rủi ro chính nếu dùng AI |
 |---|---|---|---|
-| Prepare + Confirm | gom & làm sạch dữ liệu PMS rải rác thành **bản tóm tắt ca tập trung hành động** (ngoại lệ, bất thường, tiền cần thu, việc carry-over), sắp theo mức ưu tiên | tổng hợp ngôn ngữ tự nhiên, xử lý text lộn xộn / boilerplate OTA và **ưu tiên việc** là loại bài máy làm tốt & nhất quán hơn người — khó hard-code | hallucinate / sai số / **bỏ sót một mục quan trọng** (khách VIP, transfer) → mất niềm tin. *Giảm thiểu: số liệu (số dư...) tính trong code, AI chỉ diễn đạt & ưu tiên.* |
-| Locate (fetch) | *(không phải chỗ của AI)* — kéo dữ liệu PMS qua API là việc code deterministic | dữ liệu có cấu trúc, gọi API là đủ; thêm LLM ở đây chỉ tăng rủi ro sai không cần thiết | nếu cố dùng AI để "đọc" dữ liệu → thêm lỗi vô cớ |
+| Prepare + Confirm | gom & làm sạch dữ liệu PMS rải rác thành **bản tóm tắt ca tập trung hành động** (ngoại lệ, bất thường, tiền cần thu, việc carry-over), sắp theo mức ưu tiên | tổng hợp ngôn ngữ tự nhiên + xử lý text lộn xộn / boilerplate OTA + **ưu tiên việc** — khó hard-code | hallucinate / sai số / **bỏ sót mục quan trọng** → mất niềm tin. *Giảm thiểu: số liệu tính trong code, AI chỉ diễn đạt & ưu tiên.* |
+| Confirm → Execute / Monitor | **trợ lý chat gợi ý hành động tiếp theo** và cho **tạo/giao việc** ngay từ một dòng tóm tắt | suy luận theo ngữ cảnh nhiều dữ kiện để gợi ý "nên làm gì tiếp" là việc khó hard-code, hợp với LLM | gợi ý sai / lệch ngữ cảnh thực → lễ tân làm sai việc hoặc mất tin. *Giảm thiểu: gợi ý gắn với dữ liệu thật + người quyết định cuối.* |
 
 ### Kết luận nhanh
 
 **AI leverage point quan trọng nhất của dự án tôi là:**  
-> biến mớ dữ liệu PMS rải rác thành một **bản tóm tắt ca tập trung hành động, có ưu tiên** ở bước Prepare/Confirm — nơi con người vừa chậm (15–20') vừa dễ sót.
+> biến dữ liệu PMS rải rác thành **bản tóm tắt + gợi ý hành động có ưu tiên**, rồi cho **tạo/giao việc** ngay từ đó — tức AI vừa giúp **hiểu tình hình** vừa giúp **quyết định việc cần làm tiếp** trong ca. (Đây là lý do Opstream là *trợ lý cho lễ tân*, không chỉ là công cụ tóm tắt.)
 
 **Vì sao không phải ở bước khác:**  
-> Locate (lấy dữ liệu) là việc của **API/tích hợp**, không cần AI; Execute/Monitor là **hành vi con người**. Giá trị AI nằm đúng ở khâu **tổng hợp + ưu tiên** — chỗ đắt công và dễ sai nhất khi làm tay.
+> Locate (lấy dữ liệu) là việc của **API/tích hợp**, không cần AI. Giá trị AI nằm ở khâu **tổng hợp → ưu tiên → gợi ý hành động** — chỗ con người vừa chậm (15–20') vừa dễ sót và dễ phân vân nên làm gì trước.
 
 ---
 
@@ -372,12 +372,12 @@ vì [giá trị rõ nhất].
 
 ### Bản hypothesis của tôi
 
-> Nếu chúng ta giúp **lễ tân/giám sát ca** bàn giao & tiếp nhận ca tốt hơn ở bước **Prepare/Confirm**, bằng cách dùng **AI gom + làm sạch dữ liệu PMS thành bản tóm tắt ca tập trung hành động** (số liệu tính sẵn trong code), thì họ sẽ chuyển từ **tra PMS thủ công + note tay** sang **Opstream**, vì nắm đủ việc cần làm trong **<30s thay vì 15–20 phút** mà **ít sót hơn**.
+> Nếu chúng ta giúp **lễ tân/giám sát ca** biết **việc gì cần làm tiếp và xử lý đúng** trong suốt ca — bằng **tóm tắt tập trung hành động + trợ lý gợi ý + tạo/giao việc** (số liệu tính sẵn trong code) — thì họ sẽ bỏ **tra PMS thủ công + note tay + tự phán đoán** để dùng **Opstream**, vì **xử lý đúng việc quan trọng nhanh hơn và ít sót hơn** trong cả ca.
 
 ### Tín hiệu sớm nếu hypothesis này đúng
 
-1. Thời gian bàn giao ca giảm rõ rệt (từ 15–20' xuống còn vài phút), đo được trên ca thật.
-2. Lễ tân **chủ động mở Opstream đầu mỗi ca** thay vì tra PMS, và số vụ sót (ETA / transfer / thu thiếu) giảm.
+1. Thời gian nắm tình hình đầu ca giảm rõ rệt (từ 15–20' xuống còn vài phút), đo được trên ca thật.
+2. Lễ tân **chủ động dùng Opstream trong ca** (mở đầu ca + hỏi trợ lý + tạo việc từ tóm tắt) thay vì tra PMS, và số vụ sót (ETA / transfer / thu thiếu) giảm.
 
 ---
 
@@ -400,7 +400,7 @@ Job story chưa có research vẫn chỉ là **giả thuyết tốt hơn**, chư
 | A1 — chọn đúng job executor (cả giao lẫn nhận) | có thể chỉ một phía thực sự đau, "cả hai" làm loãng trọng tâm | mới chỉ quan sát workflow, chưa đo | shadow/phỏng vấn cả người giao và người nhận ca |
 | A2 — pain đủ đau & đủ thường xuyên | ca vắng việc thì note tay là đủ, không cần tool | con số 15–20'/ca từ mô tả nội bộ | bấm giờ thực tế trên nhiều ca / nhiều property |
 | A3 — user sẽ bỏ note tay nếu có cái tốt hơn | thói quen + ngại đổi, switching cost thấp cả hai chiều | chưa có | thử 1–2 property, xem có dùng đều sau 2 tuần không |
-| A4 — AI thật sự tạo giá trị ở Prepare/Confirm | nếu tóm tắt sót/sai thì tệ hơn làm tay | demo nội bộ chạy được | so tóm tắt AI vs bản người làm trên ca thật, đo độ sót |
+| A4 — AI thật sự tạo giá trị ở Prepare/Confirm **và ở gợi ý hành động** | nếu tóm tắt/gợi ý sót/sai thì tệ hơn làm tay | demo nội bộ chạy được | so tóm tắt + gợi ý của AI vs bản người làm trên ca thật, đo độ sót & độ hữu ích của gợi ý |
 | A5 — user đủ tin AI để đưa vào việc thật | chỉ 1 lần sai số / sót khách là mất niềm tin | đã thiết kế "số liệu tính trong code" để giảm rủi ro | đo tỉ lệ lễ tân hành động theo tóm tắt mà **không** kiểm lại PMS |
 
 ### Assumption nguy hiểm nhất nếu tôi đang sai
@@ -459,16 +459,16 @@ Job story chưa có research vẫn chỉ là **giả thuyết tốt hơn**, chư
 > lễ tân / giám sát ca tại boutique hotel, ở vai trò bàn giao ca (cả người giao lẫn người nhận).
 
 **Core JTBD:**  
-> bàn giao và tiếp nhận trạng thái ca trực một cách đầy đủ và đáng tin trong thời gian ngắn, để không việc nào hay khách nào bị rơi giữa hai ca.
+> luôn nắm được việc gì cần xử lý tiếp và đảm bảo nó được xử lý đúng, suốt ca trực (từ nhận ca đến giao ca), để không việc nào hay khách nào bị rơi.
 
 **2 bước đau nhất trong workflow:**  
 > Locate (đi tìm dữ liệu rải rác khắp PMS) và Prepare (gom + làm sạch + tự tổng hợp).
 
 **AI leverage point chính:**  
-> ở bước Prepare/Confirm: biến dữ liệu PMS rải rác thành bản tóm tắt ca tập trung hành động, có ưu tiên (số liệu tính trong code, AI lo diễn đạt + ưu tiên). Locate là việc của API, không phải AI.
+> AI vừa **tổng hợp tình hình thành tóm tắt tập trung hành động** (Prepare/Confirm) vừa **gợi ý việc cần làm tiếp + cho tạo/giao việc** (trợ lý chat) — số liệu tính trong code, AI lo diễn đạt / ưu tiên / gợi ý. Locate là việc của API, không phải AI.
 
 **Product hypothesis:**  
-> nếu giúp lễ tân bàn giao/tiếp nhận ca tốt hơn ở Prepare/Confirm bằng tóm tắt AI tập trung hành động, họ sẽ bỏ tra PMS thủ công + note tay để dùng Opstream, vì nắm đủ việc trong <30s thay vì 15–20' mà ít sót hơn.
+> nếu giúp lễ tân biết việc cần làm tiếp và xử lý đúng suốt ca bằng tóm tắt + trợ lý gợi ý + tạo việc, họ sẽ bỏ tra PMS thủ công + note tay + tự phán đoán để dùng Opstream, vì xử lý đúng việc quan trọng nhanh hơn và ít sót hơn.
 
 **Assumption cần validate đầu tiên:**  
 > A5 — user có đủ tin tóm tắt AI để hành động mà không kiểm lại PMS không (vì chỉ một lần sót khách/sai số là mất niềm tin và quay lại làm tay).
