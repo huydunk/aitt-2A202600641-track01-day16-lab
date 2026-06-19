@@ -456,34 +456,34 @@ Job story chưa có research vẫn chỉ là **giả thuyết tốt hơn**, chư
 ### Version cuối cùng tôi nộp
 
 **Job executor:**  
-> _______________________________________________
+> lễ tân / giám sát ca tại boutique hotel, ở vai trò bàn giao ca (cả người giao lẫn người nhận).
 
 **Core JTBD:**  
-> _______________________________________________
+> bàn giao và tiếp nhận trạng thái ca trực một cách đầy đủ và đáng tin trong thời gian ngắn, để không việc nào hay khách nào bị rơi giữa hai ca.
 
 **2 bước đau nhất trong workflow:**  
-> _______________________________________________
+> Locate (đi tìm dữ liệu rải rác khắp PMS) và Prepare (gom + làm sạch + tự tổng hợp).
 
 **AI leverage point chính:**  
-> _______________________________________________
+> ở bước Prepare/Confirm: biến dữ liệu PMS rải rác thành bản tóm tắt ca tập trung hành động, có ưu tiên (số liệu tính trong code, AI lo diễn đạt + ưu tiên). Locate là việc của API, không phải AI.
 
 **Product hypothesis:**  
-> _______________________________________________
+> nếu giúp lễ tân bàn giao/tiếp nhận ca tốt hơn ở Prepare/Confirm bằng tóm tắt AI tập trung hành động, họ sẽ bỏ tra PMS thủ công + note tay để dùng Opstream, vì nắm đủ việc trong <30s thay vì 15–20' mà ít sót hơn.
 
 **Assumption cần validate đầu tiên:**  
-> _______________________________________________
+> A5 — user có đủ tin tóm tắt AI để hành động mà không kiểm lại PMS không (vì chỉ một lần sót khách/sai số là mất niềm tin và quay lại làm tay).
 
 ---
 
 ## Checklist trước khi nộp
 
-- [ ] Tôi đã khoanh đúng 1 lát cắt cụ thể của dự án.
-- [ ] Tôi đã phân biệt được `job executor` với buyer / influencer.
-- [ ] `Core JTBD` của tôi không nhét solution vào câu.
-- [ ] Tôi đã viết đủ 3 `job stories`.
-- [ ] Tôi đã điền `JTBD lite map` và khoanh ra 2 bước đau nhất.
-- [ ] Tôi đã chỉ ra `AI leverage point` thay vì nhảy thẳng vào feature list.
-- [ ] Tôi đã ghi rõ `assumptions to validate`.
+- [x] Tôi đã khoanh đúng 1 lát cắt cụ thể của dự án.
+- [x] Tôi đã phân biệt được `job executor` với buyer / influencer.
+- [x] `Core JTBD` của tôi không nhét solution vào câu.
+- [x] Tôi đã viết đủ 3 `job stories`.
+- [x] Tôi đã điền `JTBD lite map` và khoanh ra 2 bước đau nhất.
+- [x] Tôi đã chỉ ra `AI leverage point` thay vì nhảy thẳng vào feature list.
+- [x] Tôi đã ghi rõ `assumptions to validate`.
 - [ ] Tôi đã sửa version cuối sau khi share trong bàn.
 
 ---
