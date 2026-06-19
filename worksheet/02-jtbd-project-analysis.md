@@ -239,15 +239,15 @@ When [trigger], I want to [motivation], so I can [outcome].
 
 | # | Trigger / When | Motivation / I want to | Outcome / so I can | Điều story này cho thấy |
 |---|---|---|---|---|
-| JS1 | | | | |
-| JS2 | | | | |
-| JS3 | | | | |
+| JS1 | Tôi vừa vào ca tối, ca trước để lại một mớ note tay rời rạc | nắm ngay việc nào còn dang dở + ngoại lệ cần xử lý | bắt đầu phục vụ khách mà không bỏ sót ai | job đau nhất nằm ở lúc **tiếp nhận ca** |
+| JS2 | Khách sắp check-out nhưng còn số dư công nợ / transfer chưa đặt | thấy ngay đúng ca này cần thu / xử lý gì kèm mã đặt phòng | không để thất thoát tiền hoặc lỡ dịch vụ của khách | job có **hệ quả tiền bạc**, không chỉ là thông tin |
+| JS3 | Tôi đang trông cùng lúc nhiều property, đầu ca dồn việc | có cái nhìn gọn về tình hình từng property | phân bổ sự chú ý đúng chỗ thay vì tra từng PMS | pain **nhân lên theo số property** |
 
 ### Tự kiểm nhanh
 
-- [ ] Mỗi story là một **tình huống thật**, không phải slogan chung chung
-- [ ] 3 story không trùng hệt nhau
-- [ ] Sau khi đọc 3 story, tôi hình dung được lúc nào product của mình đáng xuất hiện
+- [x] Mỗi story là một **tình huống thật**, không phải slogan chung chung
+- [x] 3 story không trùng hệt nhau
+- [x] Sau khi đọc 3 story, tôi hình dung được lúc nào product của mình đáng xuất hiện
 
 ---
 
