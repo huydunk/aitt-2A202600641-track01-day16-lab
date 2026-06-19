@@ -439,19 +439,19 @@ Job story chưa có research vẫn chỉ là **giả thuyết tốt hơn**, chư
 
 ### Sau khi nghe phản biện, tôi thay đổi gì?
 
-- [ ] Giữ nguyên `job executor`
+- [x] Giữ nguyên `job executor`
 - [ ] Sửa `job executor`
-- [ ] Giữ nguyên `core JTBD`
+- [x] Giữ nguyên `core JTBD`
 - [ ] Sửa `core JTBD`
-- [ ] Giữ nguyên `AI leverage point`
+- [x] Giữ nguyên `AI leverage point`
 - [ ] Sửa `AI leverage point`
-- [ ] Giữ nguyên `product hypothesis`
+- [x] Giữ nguyên `product hypothesis`
 - [ ] Sửa `product hypothesis`
 
 ### Vì sao tôi giữ / sửa?
 
-> _______________________________________________  
-> _______________________________________________
+> Bốn trụ chính (job executor, core JTBD, AI leverage point, hypothesis) đứng vững sau thảo luận nên tôi giữ nguyên — không có phản biện nào lật được quyết định nào.  
+> Điều thảo luận thêm vào không phải sửa, mà là một **lớp rủi ro mới**: liệu người dùng có chịu nói/chat với máy không. Vì vậy tôi (1) thêm assumption cần validate về **mức độ chấp nhận trợ lý chat**, và (2) chốt ưu tiên trải nghiệm: **tóm tắt + nút tạo việc là lối dùng chính, chat là phụ trợ** — để giá trị cốt lõi không phụ thuộc vào việc user có thích chat hay không.
 
 ### Version cuối cùng tôi nộp
 
@@ -484,7 +484,7 @@ Job story chưa có research vẫn chỉ là **giả thuyết tốt hơn**, chư
 - [x] Tôi đã điền `JTBD lite map` và khoanh ra 2 bước đau nhất.
 - [x] Tôi đã chỉ ra `AI leverage point` thay vì nhảy thẳng vào feature list.
 - [x] Tôi đã ghi rõ `assumptions to validate`.
-- [ ] Tôi đã sửa version cuối sau khi share trong bàn.
+- [x] Tôi đã sửa version cuối sau khi share trong bàn.
 
 ---
 
