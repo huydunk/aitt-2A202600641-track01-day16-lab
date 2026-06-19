@@ -9,7 +9,7 @@ companion-reference: Strategyn_JTBD_Playbook.pdf (giảng viên gửi kèm)
 
 # Lab 2 — JTBD Project Analysis / Dùng JTBD để soi lại dự án nhóm
 
-**Tên dự án / sản phẩm:** _______________  
+**Tên dự án / sản phẩm:** Opstream — Tóm tắt ca trực ([C2-App-071](https://github.com/AI20K-Build-Cohort-2/C2-App-071))  
 
 > Đây là **file duy nhất** của Lab 2.  
 > File này đồng thời đóng vai trò:
@@ -92,17 +92,17 @@ Phần lớn dự án nhóm viết quá rộng ở bước này, rồi sau đó 
 
 ### Khoanh đúng 1 lát cắt theo 4 điểm
 
-- [ ] **1 nhóm người dùng chính**
-- [ ] **1 hoàn cảnh / tình huống rõ**
-- [ ] **1 job cốt lõi**
-- [ ] **1 workflow đủ cụ thể để vẽ ra được**
+- [x] **1 nhóm người dùng chính** — lễ tân / giám sát ca tại boutique hotel
+- [x] **1 hoàn cảnh / tình huống rõ** — ngay lúc bàn giao ca (đầu/cuối ca)
+- [x] **1 job cốt lõi** — nắm nhanh tình hình ca trước để vào ca không sót việc
+- [x] **1 workflow đủ cụ thể để vẽ ra được** — tra PMS → chép note → truyền miệng
 
 ### Điền nhanh trước khi làm
 
-- **Dự án của nhóm tôi là:** ___________________________________
-- **Lát cắt tôi chọn để phân tích hôm nay là:** ___________________________________
+- **Dự án của nhóm tôi là:** Opstream — tự động tạo tóm tắt bàn giao ca trực cho lễ tân khách sạn boutique, kéo dữ liệu PMS qua API và sinh tóm tắt có cấu trúc bằng AI trong <30s.
+- **Lát cắt tôi chọn để phân tích hôm nay là:** lễ tân/giám sát ca tại boutique hotel phố cổ Hà Nội, đúng thời điểm **bàn giao ca**, cần nắm nhanh việc chưa xong + ngoại lệ cần xử lý — nhất là khi một người ôm nhiều property.
 - **Vì sao tôi chọn lát cắt này:**  
-  > ___________________________________
+  > đây là khoảnh khắc đau nhất và lặp lại mỗi ca: mất 15–20 phút chỉ để tổng hợp thông tin, dễ bỏ sót ETA khách / transfer chưa đặt / yêu cầu đặc biệt, và rủi ro nhân lên khi quản lý 5 property cùng lúc.
 
 ### Viết quá rộng vs viết sắc hơn
 
@@ -121,13 +121,13 @@ Phần lớn dự án nhóm viết quá rộng ở bước này, rồi sau đó 
 ### Tóm tắt dự án trong 3 dòng
 
 1. **Nhóm tôi đang nghĩ mình đang giải quyết vấn đề gì?**  
-   > ___________________________________
+   > việc bàn giao ca thủ công tốn 15–20 phút mỗi ca và dễ bỏ sót thông tin quan trọng (ETA khách, transfer, yêu cầu đặc biệt, việc còn dang dở) giữa các ca.
 
 2. **Người dùng chính hiện nhóm đang nhắm tới là ai?**  
-   > ___________________________________
+   > lễ tân và giám sát ca tại boutique hotel phố cổ Hà Nội (phụ: quản lý vận hành theo dõi nhiều property cùng lúc).
 
 3. **Hiện tại người dùng đó đang giải quyết vấn đề này bằng cách nào?**  
-   > ___________________________________
+   > tra thủ công từng màn hình PMS, chép tay note, rồi truyền miệng cho người vào ca sau.
 
 ---
 
@@ -139,21 +139,21 @@ Phần lớn dự án nhóm viết quá rộng ở bước này, rồi sau đó 
 ### Trả lời 4 câu ngắn
 
 1. **Ai đang gặp vấn đề này?**  
-   > ___________________________________
+   > lễ tân & giám sát ca ở boutique hotel phố cổ Hà Nội — nơi nhân sự mỏng, một người ôm nhiều đầu việc, và nhiều khi trông cùng lúc vài property.
 
 2. **Vấn đề xuất hiện trong hoàn cảnh nào?**  
-   > ___________________________________
+   > đúng lúc giao/nhận ca (và giờ cao điểm check-in/check-out), khi phải nhanh chóng hiểu chuyện gì đã xảy ra ở ca trước và còn việc gì chưa xong.
 
 3. **Hiện tại họ đang dùng giải pháp thay thế nào?**  
-   > ___________________________________
+   > làm thủ công: mở từng màn hình PMS, ghi note tay, truyền miệng; một số nơi chắp vá thêm Excel/Zalo/sổ giao ca.
 
 4. **Vì sao đây là thời điểm đáng giải?**  
-   > ___________________________________
+   > LLM giờ đủ rẻ & nhanh để tóm tắt có cấu trúc trong <30s, PMS đã có API để kéo dữ liệu, và xu hướng một quản lý/lễ tân lo nhiều property khiến rủi ro sót thông tin tăng mạnh.
 
 ### Tóm tắt market context trong 3-4 dòng
 
-> _______________________________________________  
-> _______________________________________________
+> Ở các boutique hotel phố cổ Hà Nội, lễ tân phải bàn giao ca trong điều kiện nhân sự mỏng và dữ liệu nằm rải rác khắp PMS. Cách làm thủ công (tra màn hình + note tay + truyền miệng) vừa chậm vừa dễ sót, và càng rủi ro khi một người lo nhiều property.  
+> Bây giờ là thời điểm đáng giải vì PMS đã mở API và LLM đủ rẻ/nhanh để biến mớ dữ liệu rời rạc đó thành một bản tóm tắt ca tập trung vào hành động.
 
 ---
 
