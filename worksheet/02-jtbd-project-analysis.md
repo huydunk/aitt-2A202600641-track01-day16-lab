@@ -99,7 +99,7 @@ Phần lớn dự án nhóm viết quá rộng ở bước này, rồi sau đó 
 
 ### Điền nhanh trước khi làm
 
-- **Dự án của nhóm tôi là:** Opstream — tự động tạo tóm tắt bàn giao ca trực cho lễ tân khách sạn boutique, kéo dữ liệu PMS qua API và sinh tóm tắt có cấu trúc bằng AI trong <30s.
+- **Dự án của nhóm tôi là:** Opstream — **trợ lý AI cho lễ tân** khách sạn boutique: kéo dữ liệu PMS qua API rồi (1) tạo **tóm tắt ca tập trung hành động**, (2) **trợ lý chat gợi ý** việc cần làm tiếp, (3) **tạo/giao việc** — giúp lễ tân không bỏ sót việc trong suốt ca.
 - **Lát cắt tôi chọn để phân tích hôm nay là:** lễ tân/giám sát ca tại boutique hotel phố cổ Hà Nội, đúng thời điểm **bàn giao ca**, cần nắm nhanh việc chưa xong + ngoại lệ cần xử lý — nhất là khi một người ôm nhiều property.
 - **Vì sao tôi chọn lát cắt này:**  
   > đây là khoảnh khắc đau nhất và lặp lại mỗi ca: mất 15–20 phút chỉ để tổng hợp thông tin, dễ bỏ sót ETA khách / transfer chưa đặt / yêu cầu đặc biệt, và rủi ro nhân lên khi quản lý 5 property cùng lúc.
