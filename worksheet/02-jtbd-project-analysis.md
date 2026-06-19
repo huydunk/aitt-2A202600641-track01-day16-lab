@@ -429,8 +429,8 @@ Job story chưa có research vẫn chỉ là **giả thuyết tốt hơn**, chư
 
 | Ý phản biện tôi nghe được | Nó chạm vào phần nào? | Tôi sẽ giữ / sửa gì? |
 |---|---|---|
-| | | |
-| | | |
+| (Bàn về dự án của bạn cùng bàn — gamified speaking agent dạy trẻ học nói tiếng Anh) bạn ấy cho rằng assumption nguy hiểm nhất là *"liệu sản phẩm có giúp trẻ nói tốt hơn không"*. Tôi phản biện: rủi ro lớn hơn là **người dùng có chịu nói với một cái laptop không** — chính tôi cũng ngại nói với máy. | giả định **chấp nhận & hành vi người dùng** (willingness to adopt), không chỉ chất lượng AI | ghi nhận đây là một lớp rủi ro tôi chưa soi kỹ cho chính Opstream |
+| Áp ngược lại Opstream: lễ tân có thật sự chịu **hỏi / chat với trợ lý** không, hay vẫn bấm-tra theo thói quen cũ? | AI leverage point #2 (trợ lý chat) + A5 (niềm tin & chấp nhận) | thêm assumption cần validate: **mức độ chấp nhận trợ lý chat** (so với chỉ đọc tóm tắt); cân nhắc để **tóm tắt + nút bấm là lối dùng chính, chat là phụ trợ** |
 | | | |
 
 ---
