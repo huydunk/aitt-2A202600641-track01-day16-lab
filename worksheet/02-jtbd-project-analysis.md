@@ -268,14 +268,14 @@ Qua JTBD lens, đối thủ không chỉ là app cùng ngành.
 
 | Alternative hiện tại | User đang thuê nó để làm gì? | Nó làm tốt gì? | Nó fail ở đâu? | Switching cost hiện tại cao hay thấp? |
 |---|---|---|---|---|
-| Alt 1 | | | | |
-| Alt 2 | | | | |
-| Alt 3 | | | | |
+| Note tay + truyền miệng khi giao ca | ghi & truyền việc cần biết cho ca sau | linh hoạt, không cần công cụ, nhanh khi ít việc | dễ sót, không đầy đủ, phụ thuộc trí nhớ, không truy vết được | thấp |
+| Tra trực tiếp từng màn hình PMS | lấy dữ liệu gốc (check-in/out, dịch vụ, thanh toán) | dữ liệu chính xác & đầy đủ nguồn | chậm 15–20', rải rác nhiều màn hình, lẫn boilerplate OTA, phải tự tổng hợp | thấp–trung (vẫn buộc dùng PMS) |
+| Excel / sổ giao ca / nhóm Zalo | lưu & chia sẻ note có cấu trúc nhẹ, để lại lịch sử | chia sẻ được, có dấu vết | nhập tay thủ công, không đồng bộ PMS, dễ lỗi thời / sai sót | thấp |
 
 ### Kết luận nhanh
 
 **Nếu project của tôi biến mất hôm nay, user nhiều khả năng sẽ quay về:**  
-> _______________________________________________
+> quay lại tra PMS thủ công từng màn hình rồi note tay + truyền miệng (Alt 1 + Alt 2) — tức quay về đúng cái workflow 15–20 phút/ca đang đau.
 
 ---
 
@@ -310,23 +310,22 @@ Mục tiêu là nhìn ra:
 
 | Step | Trong workflow này user đang cố làm gì? | Hôm nay họ đang dùng gì? | Friction / pain hiện tại | Mức đau |
 |---|---|---|---|---|
-| Define | | | | Low / Med / High |
-| Locate | | | | Low / Med / High |
-| Prepare | | | | Low / Med / High |
-| Confirm | | | | Low / Med / High |
-| Execute | | | | Low / Med / High |
-| Monitor | | | | Low / Med / High |
-| Modify | | | | Low / Med / High |
-| Conclude | | | | Low / Med / High |
+| Define | xác định ca này cần nắm/bàn giao những gì (việc dang dở, khách đặc biệt, ngoại lệ) | kinh nghiệm cá nhân, tự nhớ | không có chuẩn — mỗi người định nghĩa "cần biết" một kiểu | Med |
+| Locate | tìm dữ liệu đó nằm ở đâu | mở từng màn hình PMS + note ca trước + Zalo | rải rác nhiều nơi, tốn phần lớn thời gian | **High** |
+| Prepare | gom & làm sạch dữ liệu (lọc boilerplate OTA, tính số dư công nợ) | chép tay, tính nhẩm | thủ công, dễ sai, mất công nhất | **High** |
+| Confirm | kiểm chéo đã đủ/đúng chưa (đối soát thanh toán, ETA, transfer) | tự rà lại | dễ sót đúng mục quan trọng | Med–High |
+| Execute | thực sự bàn giao / tiếp nhận ca | truyền miệng + đưa note tay | phụ thuộc người nói, thông tin rơi rụng | Med |
+| Monitor | theo dõi việc carry-over trong ca có được xử lý không | trí nhớ / nhìn note | dễ quên việc tồn | Med |
+| Modify | cập nhật khi có thay đổi (đổi ETA, hủy phòng) | sửa note tay | rời rạc, không đồng bộ | Low–Med |
+| Conclude | chốt còn gì chuyển tiếp khi hết ca | lại viết note cho ca sau | lặp lại vòng lặp thủ công | Med |
 
 ### Chốt 2 bước đau nhất
 
-**Bước đau nhất #1:** _________________________________  
-**Bước đau nhất #2:** _________________________________
+**Bước đau nhất #1:** Locate — đi tìm dữ liệu rải rác khắp các màn hình PMS  
+**Bước đau nhất #2:** Prepare — gom & làm sạch dữ liệu rồi tự tổng hợp (lọc OTA, tính số dư)
 
 **Vì sao đây là nơi đáng chú ý nhất:**  
-> _______________________________________________  
-> _______________________________________________
+> phần lớn 15–20 phút mỗi ca cháy ở Locate + Prepare: đi nhặt dữ liệu khắp nơi rồi tự tổng hợp/làm sạch bằng tay. Đây cũng chính là nơi **dễ sót nhất** (ETA, transfer, số dư), và là loại việc **máy làm tốt & nhất quán hơn người** — đúng chỗ đáng để AI chen vào.
 
 ---
 
